@@ -6,6 +6,10 @@ This project allows you to find the most active forks of a repository.
 
 [Find Active Fork](https://techgaun.github.io/active-forks/index.html)
 
+
+## MODIF 
+Only change some CSS and add ICO link!
+
 ## As Bookmarklet
 
 If you would like to use this tool as a bookmarklet,
