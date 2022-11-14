@@ -22,7 +22,16 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
 
     <style>
-        .darkmode-layer, .darkmode-toggle { z-index: 500; }
+    .darkmode-layer, .darkmode-toggle { z-index: 500; }
+	img {
+		filter: invert(1) !important;
+	    -webkit-filter: invert(1) !important;
+		-moz-filter: invert(1) !important;
+		margin-bottom: 5px;
+		}
+	.table-striped tbody tr:nth-of-type(2n+1) {
+	     background-color: rgba(42, 42, 43, 0.35);
+		}
     </style>
 </head>
 
@@ -37,6 +46,8 @@
                                 <i class="fa fa-github-alt pull-left" aria-hidden="true"></i>
                             </a>
                             Active GitHub Forks
+							<span class="custom-control_ custom-switch_" style="font-size:12px">( <i>in <span style="font-size: 14px; color: Dodgerblue;"><i class="fa fa-code"></i></span> we trust</i> )
+
                         </h3>
                     </div>
 
@@ -63,4 +74,5 @@
         </div>
     </div>
     <script type="text/javascript" src="js/main.js"></script>
+
 </body>

@@ -20,7 +20,7 @@ function addDarkmodeWidget() {
 }
 
 function fetchData() {
-  const repo = document.getElementById('q').value.replaceAll(' ','');
+  const repo = document.getElementById('q').value;
   const re = /[-_\w]+\/[-_.\w]+/;
 
   const urlRepo = getRepoFromUrl();
@@ -46,7 +46,7 @@ function updateDT(data) {
   // Format dataset and redraw DataTable. Use second index for key name
   const forks = [];
   for (let fork of data) {
-    fork.repoLink = `<a href="https://github.com/${fork.full_name}">Link</a>`;
+    fork.repoLink = `<a style="margin-left: 15%;"href="https://github.com/${fork.full_name}"> <span style="font-size: 18px;margin-left: 15%;color: Dodgerblue;"> <i class="fa fa-link" aria-hidden="true"></i></span></a>`;
     fork.ownerName = `<img src="${fork.owner.avatar_url || 'https://avatars.githubusercontent.com/u/0?v=4'}&s=48" width="24" height="24" class="mr-2 rounded-circle" />${fork.owner ? fork.owner.login : '<strike><em>Unknown</em></strike>'}`;
     forks.push(fork);
   }
