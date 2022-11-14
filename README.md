@@ -20,4 +20,4 @@ and it'll bring up the Active Forks of that repo.
 javascript:!function(){if(title=document.title,title)if(thing=title.split(/(GitHub\s-\s)*([^:]*)/)[2],thing){var t="https://techgaun.github.io/active-forks/index.html#"+thing;window.open(t)}else window.alert("Not%20a%20valid%20GitHub%20page")}();
 ```
 
-![Screenshot](screenshot.png "Active Forks in Action")
+![Screenshot](screenshot_dark.png "Active Forks in Action")
